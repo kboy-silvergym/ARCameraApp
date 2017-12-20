@@ -68,7 +68,6 @@ class ViewController: UIViewController {
 extension ViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        
         if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
             setImageToScene(image: image)
         }
