@@ -31,7 +31,6 @@ class ViewController: UIViewController {
         showUIImagePicker()
     }
     
-    /// Functions related to Camera Roll Objects
     private func showUIImagePicker() {
         if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
             let pickerView = UIImagePickerController()
