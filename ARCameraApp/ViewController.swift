@@ -33,7 +33,6 @@ class ViewController: UIViewController {
     
     /// Functions related to Camera Roll Objects
     private func showUIImagePicker() {
-        
         if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
             let pickerView = UIImagePickerController()
             pickerView.sourceType = .photoLibrary
@@ -44,7 +43,6 @@ class ViewController: UIViewController {
     }
     
     private func setImageToScene(image: UIImage) {
-        
         if let camera = sceneView.pointOfView {
             let position = SCNVector3(x: 0, y: 0, z: -0.5) // 偏差のベクトルを生成する
             let convertPosition = camera.convertPosition(position, to: nil)
